@@ -4,6 +4,8 @@ body {
     font-family: 'Roboto', 'Raleway', sans-serif;
     color: #2E2F42;
     font-size: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 400;
 }
 header {
     padding-left: 156px;
@@ -26,20 +28,22 @@ header {
     padding: 0px 40px 0px 0;
 }
 .main-menu li a {
-
     position: relative;
     color: #000;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    font-size: 16px;
     text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    
 }
-.main-menu li a:active {
+.main-menu li a:hover {
     color: #404BBF;
-    border-bottom: 4px solid #404BBF;
-    line-height: 20px;
 }
-
+.main-menu li a:focus {
+    color: #404BBF;
+}
 .contact-info {
     list-style: none;
     display: inline-block;
@@ -70,7 +74,7 @@ text-decoration: none;
     font-family: 'Raleway';
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.3;
     letter-spacing: 0.03em;
     color: #2E2F42;
     
@@ -79,11 +83,16 @@ text-decoration: none;
     color: #4D5AE5;
 }
 .contact-info a {
-text-decoration: none;
-color: #000;
+    text-decoration: none;
+    color: #000;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+   
 }
 
-.contact-info a:active {
+.contact-info a:hover {
     color: #404BBF;
 }
 
@@ -103,9 +112,10 @@ section.baner {
     transform: translate(-50%, -50%);
 }
 .baner-info h1 {
-    color: #fff;
+color: #fff;
     font-size: 56px;
     font-weight: 700;
+    line-height: 1.07;
 }
 
 .button-order-service button {
@@ -115,7 +125,7 @@ section.baner {
     padding: 16px 32px;
     color: #fff;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
 }
@@ -125,7 +135,11 @@ section.baner {
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
 }
-
+.button-order-service button:focus {
+    background: #404BBF;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+}
 .our-advantages {
     list-style: none;
     display: inline-block;
@@ -140,12 +154,14 @@ li.element {
     padding: 10px 0 0px 9px;
 }
 .info h3 {
-    font-size: 20px;
+font-size: 20px;
     font-weight: 500;
+    line-height: 1.3;
 }
 .our-advantages .info p {
-    font-size: 16px;
+font-size: 16px;
     text-align: left;
+    line-height: 1.5;
 }
 
 
@@ -161,10 +177,11 @@ li.element {
 }
 
 h2.section-name {
-    text-align: center;
+text-align: center;
     font-size: 36px;
-    line-height: 40px;
     font-weight: 700;
+    text-transform: capitalize;
+    line-height: 1.1;
 }
 
 .what-doing {
@@ -190,10 +207,17 @@ h2.section-name.our-team {
 .info {
     background: #fff;
     text-align: center;
+    margin: 0 24px 0px 0;
 }
-
+.one-person h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+}
 li.element.person {
     width: 20%;
+    background: #fff;
+    text-align: center;
 }
 ul.list-of-team {
     text-align: center;
@@ -234,20 +258,19 @@ span.bluecolor {
 }
 
 
-.category a {
-text-decoration: none;
-    padding: 12px 24px 12px 24px;
-    background: #F4F4FD;
-    border: 1px solid #E7E9FC;
-    border-radius: 4px;
-    color: #4D5AE5;
-}
+
 ul.list-of-category {
     text-align: center;
     margin-bottom: 72px;
 }
 
-a.active {
+.list-of-category button:hover {
+    background: #404BBF;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 2px 1px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+    color: #fff;
+}
+.list-of-category button:focus {
     background: #404BBF;
     box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 2px 1px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
     border-radius: 4px;
@@ -275,11 +298,36 @@ padding: 48px 24px 0px 0;}
     padding-left: 16px;
     padding-bottom: 8px;
     font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
 }
 .work-description p {
     margin: 0 0 0 0;
     padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
 }
 .category {
     margin-top: 96px;
+}
+
+.list-of-category button {
+    text-decoration: none;
+    padding: 12px 24px 12px 24px;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    color: #4D5AE5;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.one-person p {
+    line-height: 1.5;
+}
+
+.footer-info p {
+    color: #E7E9FC;
+    line-height: 1.5;
 }
