@@ -38,9 +38,7 @@ header {
     line-height: 1.5;
     
 }
-.main-menu li a:hover {
-    color: #404BBF;
-}
+.main-menu li a:hover,
 .main-menu li a:focus {
     color: #404BBF;
 }
@@ -86,13 +84,13 @@ text-decoration: none;
     text-decoration: none;
     color: #000;
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
    
 }
 
-.contact-info a:hover {
+.contact-info a:hover,
+.contact-info a:focus {
     color: #404BBF;
 }
 
@@ -116,9 +114,10 @@ color: #fff;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
+    letter-spacing: 0.02em;
 }
 
-.button-order-service button {
+.button-order-service {
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border-radius: 4px;
@@ -128,30 +127,26 @@ color: #fff;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    font-family: inherit;
 }
 
-.button-order-service button:hover {
-    background: #404BBF;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    border-radius: 4px;
-}
+.button-order-service button:hover,
 .button-order-service button:focus {
     background: #404BBF;
-    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-    border-radius: 4px;
 }
 .our-advantages {
     list-style: none;
     display: inline-block;
-    padding: 50px 100px 0 100px;
+    font-family: 'Roboto';
+    letter-spacing: 0.04em;
 }
 
 .our-advantages li {
     display: inline-flex;
 }
 li.element {
-    width: 24%;
-    padding: 10px 0 0px 9px;
+padding-right: 24px;
+text-align: center;
 }
 .info h3 {
 font-size: 20px;
@@ -182,6 +177,7 @@ text-align: center;
     font-weight: 700;
     text-transform: capitalize;
     line-height: 1.1;
+    letter-spacing: 0.02em;
 }
 
 .what-doing {
@@ -213,6 +209,7 @@ h2.section-name.our-team {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.1;
+    letter-spacing: 0.02em;
 }
 li.element.person {
     width: 20%;
@@ -264,18 +261,14 @@ ul.list-of-category {
     margin-bottom: 72px;
 }
 
-.list-of-category button:hover {
-    background: #404BBF;
-    box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 2px 1px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
-    border-radius: 4px;
-    color: #fff;
-}
+.list-of-category button:hover,
 .list-of-category button:focus {
     background: #404BBF;
     box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 2px 1px rgb(0 0 0 / 8%), 0px 2px 2px rgb(0 0 0 / 12%);
     border-radius: 4px;
     color: #fff;
 }
+
 
 .lsit-of-work {
 width: 100%;
@@ -304,7 +297,6 @@ padding: 48px 24px 0px 0;}
 .work-description p {
     margin: 0 0 0 0;
     padding-left: 16px;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
 }
@@ -322,6 +314,8 @@ padding: 48px 24px 0px 0;}
     letter-spacing: 0.04em;
     font-size: 16px;
     line-height: 1.5;
+    font-family: inherit;
+    cursor: pointer;
 }
 .one-person p {
     line-height: 1.5;
